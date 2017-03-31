@@ -671,7 +671,6 @@
 				}
 
 				var titleType = this.getAttribute("data-title-type");
-				alert("index.html, 675-->" + titleType);
 				var webview_style = {
 					popGesture: "close"
 				}
@@ -747,7 +746,7 @@
 						extras.acceleration = "capture";
 					}
 					
-					
+					alert("index.html,751 href="+ this.href + ",id=" + id + ",style=" + webview_style);
 					var webview = plus.webview.create(this.href,id,webview_style,extras);
 					webview.addEventListener("titleUpdate",function () {
 						setTimeout(function () {
