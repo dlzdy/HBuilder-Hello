@@ -3226,6 +3226,7 @@ function(e) {
             })
         },
         l = i.callbackId(u, c);
+        alert("all.js 3229" + "create exec" + r);
         i.exec(r, "create", [a.__UUID__, l, a.display, a.__left__, a.__top__, a.__width__, a.__height__])
     }
     var e = e,
@@ -4488,6 +4489,7 @@ function(e) {
         r && r.hide(n, i, o)
     }
     function d(e, t, n) {
+		alert("all.js(4492) exec:I=" + I   + ", x=" + x + ", []=" + [e.__IDENTITY__, t, [e.__uuid__, n]]);//UI
         b.exec(I, x, [e.__IDENTITY__, t, [e.__uuid__, n]])
     }
     function h(e, t, n) {
@@ -4651,8 +4653,18 @@ function(e) {
         return window.location.href
     }
     function n(e, n, r, a) {
-        if (this.__view_array__ = [], i.NView.prototype.constructor.apply(this, [o]), this.id = null, n && n.name && (this.id = n.name), a) for (var s in a) this[s] = a[s]; ! this.id && e && (this.id = n.name = e),
-        r || (i.__pushWindow__(this), i.exec(this, o, [e, n, this.__callback_id__, t(), a]))
+		console.log("all.js(4653)" + "new WebView," + "i=" + i);
+		//alert("all.js(4653)" + "new WebView," + "i=" + i);
+		//alert("all.js(4653)" + "e=" + e);
+		//alert("all.js(4653)" + "n=" + n);
+		//alert("all.js(4653)" + "r=" + r);
+		//alert("all.js(4653)" + "a=" + a);
+        if (this.__view_array__ = [], i.NView.prototype.constructor.apply(this, [o]), this.id = null, n && n.name && (this.id = n.name), a){
+			for (var s in a) this[s] = a[s];
+		} 
+		! this.id && e && (this.id = n.name = e),
+        r || (i.__pushWindow__(this), 
+		i.exec(this, o, [e, n, this.__callback_id__, t(), a]))
     }
     var e = e,
     i = e.webview,
