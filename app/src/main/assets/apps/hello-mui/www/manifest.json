@@ -11,7 +11,7 @@
 		"72": "icon.png"
 	},
 	"fullscreen":true,
-	"launch_path": "list.html",/*必选，应用的入口页面，默认为根目录下的index.html；也可以是网络地址，网络地址必须以http://或https://开头*/
+	"launch_path": "index.html",/*必选，应用的入口页面，默认为根目录下的index.html；也可以是网络地址，网络地址必须以http://或https://开头*/
 	"developer": {
 		"email": "",/*可选，开发者名称*/
 		"name": "",/*可选，开发者邮箱地址*/
@@ -62,9 +62,18 @@
 		},
 		"Payment":{},
 		"Uploader": {},
-		"Share":{}
+		"Share":{},
+		"NativeObj": {},
+		"Invocation":{}
 	},
 	"plus": {
+		"launchwebview": {
+            "navigationbar": {
+               "backgroundcolor": "#f7f7f7",
+               "titletext": "首页",
+               "titlecolor": "#000000"
+            }
+        },
 		"popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，none为无侧滑返回功能，hide为侧滑隐藏Webview窗口。参考ask.dcloud.net.cn/article/102*/
 		"splashscreen": {
 			"autoclose": false,/*如果为true，程序启动的图片可以自动关闭，如果为false，开发者需要手动关闭*/
@@ -73,9 +82,9 @@
 		"runmode": "normal",/*两个值，liberate或normal，前者在应用安装时释放资源，后者不需要释放资源*/
 		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
 		"distribute": {
-			"debug": "true",/*可选，是否为debug模式，可取值：true表示debug模式运行，false表示release模式运行，默认值为false*/
+			"debug": "",/*可选，是否为debug模式，可取值：true表示debug模式运行，false表示release模式运行，默认值为false*/
 			"apple": {
-				"appid": "",/*iOS必选，苹果开发网站申请的appid，如com.dheaven.hbuilder*/
+				"appid": "",/*iOS必选，苹果开发网站申请的appid，如io.dcloud.HelloMUI*/
 				"mobileprovision": "",/*iOS必选，打包配置文件*/
 				"password": "",/*iOS必选，导入配置文件密码*/
 				"p12": "",/*iOS必选，打包配置文件关联的个人证书*/
@@ -83,7 +92,7 @@
 				"frameworks":[]/*用户在调用 Native.js 或开发第三方插件时使用到的 FrameWork 名*/
 			},
 			"google": {
-				"packagename": "",/*Android必选，程序包名，如com.dheaven.hbuilder*/
+				"packagename": "",/*Android必选，程序包名，如io.dcloud.HelloMUI*/
 				"keystore": "",/*Android必选，打包证书文件*/
 				"password": "",/*Android必选，打包证书密码*/
 				"aliasname": "",/*Android必选，打包证书别名*/
@@ -195,8 +204,7 @@
 				"resources": [
 					"js/mui.min.js",
 					"fonts/mui.ttf",
-					"css/mui.min.css",
-					"css/mui.css"
+					"css/mui.min.css"
 				],
 				"refer": [
 					"examples/template.html",
@@ -262,9 +270,7 @@
 					"examples/tableviews-with-swipe.html",
 					"examples/media-list.html",
 					"examples/nav.html",
-					"examples/numbox.html",
-					"examples/feedback.html",
-					"examples/card.html"
+					"examples/numbox.html"
 				],
 				"priority": 0
 			},
@@ -1009,35 +1015,6 @@
 					"css/app.css",
 					"css/mui.min.css",
 					"js/mui.js"
-				],
-				"refer": [],
-				"priority": 0
-			},
-			"examples/feedback.html": {
-				"resources": [
-					"css/feedback.css",
-					"fonts/mui.ttf",
-					"js/feedback.js"
-				],
-				"refer": [],
-				"priority": 0
-			},
-			"audio.html": {
-				"resources": [
-					"js/common.js",
-					"css/common.css",
-					"js/mui.min.js",
-					"css/mui.css"
-				],
-				"refer": [],
-				"priority": 0
-			},
-			"examples/card.html": {
-				"resources": [
-					"images/cbd.jpg",
-					"images/yuantiao.jpg",
-					"images/logo.png",
-					"css/app.css"
 				],
 				"refer": [],
 				"priority": 0

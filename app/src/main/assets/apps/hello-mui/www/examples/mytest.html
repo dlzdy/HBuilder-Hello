@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<script src="../js/mui.js"></script>
+		<!--<script src="../js/testPlus.js"></script>-->
+		<script>
+			
+//			var plus = function(){
+//
+//			};
+//			
+//			//runtime
+//			(function(e) {
+//			    var plus = e;
+//				plus.runtime = window.runtime;
+//				plus.webview = window.webview;
+//				plus.nativeUI = window.nativeUI;
+//			}) (plus),
+
+			
+			function test1(){
+				mui.alert(plus.ttt);
+			}
+			function plusAlert(){
+				plus.nativeUI.alert("欢迎使用mui", null, "警告信息", null);
+			}
+			function plusConfirm(){
+				plus.nativeUI.confirm("确认删除吗", null, "确认", "确认,取消,应用");
+			}
+			/*
+			function plusready(){
+				alert("plusready55");
+			}
+			document.addEventListener("plusready", function() {
+				plusready();
+			}, false);
+			*/
+		</script>
+
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">mytest</h1>
+		</header>
+		<div class="mui-content">
+			<p>
+			<p>
+			<a href="#" onclick="test1()">alert plus.ttt</a>
+			<p>
+			<p>
+			<p>
+			<p>
+			<a href="#" onclick="javascript:window.plus.webview.test()">plus webview test</a>
+			<p>
+			<p>
+			<a href="#" onclick="javascript:window.plus.runtime.test()">plus runtime test</a>
+			<p>
+			<p>
+			<a href="#" onclick="javascript:plusAlert();">plus alert</a>
+			<p>
+			<p>
+			<a href="#" onclick="javascript:plusConfirm();">plus confirm</a>
+			<p>
+			<p>
+		</div>
+
+	</body>
+
+</html>

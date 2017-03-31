@@ -3226,7 +3226,6 @@ function(e) {
             })
         },
         l = i.callbackId(u, c);
-        alert("all.js(3229) create-->" + r);
         i.exec(r, "create", [a.__UUID__, l, a.display, a.__left__, a.__top__, a.__width__, a.__height__])
     }
     var e = e,
@@ -4058,7 +4057,6 @@ function(e) {
     },
     o.prototype.currentWebview = function() {
         if (!_currentFrameObj) {
-			alert("4061 _Server--" + _Server);
             var t = window.plus.bridge.execSync2(_Server, "currentWebview", [], null, !0);
             _currentFrameObj = e.ios.__Tool.New(t, !0)
         }
@@ -4384,7 +4382,6 @@ function(e) {
             u = e.obj.Callback.prototype.addEventListener.apply(c, [keyEvent[o], s, a]);
             if (u) {
                 var l = [keyEvent[o], window.__HtMl_Id__];
-                //alert("exec(4389), n=" + n + ", i="+i ); ui
                 t.exec(n, i, [c.__IDENTITY__, "addEventListener", [c.__uuid__, l]])
             }
         }
@@ -4468,8 +4465,6 @@ function(e) {
     function l() {
         var t = U[window.__HtMl_Id__];
         if (null == t || void 0 === t) {
-            //
-            //alert("exeSyn2(4473)");
             var n = b.execSync2(I, S, [I, "currentWebview", [window.__HtMl_Id__]]);
             n && (t = new e.webview.Webview(null, null, !0, n.extras), t.__uuid__ = window.__HtMl_Id__, t.id = n.id, U[t.__uuid__] = t, b.exec(I, x, [I, "setcallbackid", [t.__uuid__, [t.__callback_id__]]]))
         }

@@ -11,7 +11,7 @@
 		<!--标准mui.css-->
 		<link rel="stylesheet" href="../css/mui.min.css">
 		<!--App自定义的css-->
-		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css" />-->
 		<style>
 			.mui-btn {
 				display: block;
@@ -37,13 +37,43 @@
 				<button id='confirmBtn' type="button" class="mui-btn mui-btn-blue mui-btn-outlined">确认消息框</button>
 				<button id='promptBtn' type="button" class="mui-btn mui-btn-blue mui-btn-outlined">输入对话框</button>
 				<button id='toastBtn' type="button" class="mui-btn mui-btn-blue mui-btn-outlined">自动消失提示框</button>
-				<div id="info">
-
-				</div>
+				<div id="info"></div>
 			</div>
 		</div>
-		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.js"></script>
 		<script type="text/javascript" charset="utf-8">
+//			/* */
+//			var plus = function(){};
+//			(function(e) {
+//			    var plus = e;
+//				plus.runtime = window.runtime;
+//				plus.webview = window.webview;
+//				
+//				//重新定义nativeUI
+//				var _nativeUI= {
+//			        confirm: function (message, callback, title, btnArray){
+//			            return window.nativeUI.confirm(message, callback, title, JSON.stringify(btnArray));
+//			        },
+//			        toast: function (message,options){
+//			            return window.nativeUI.toast(message,JSON.stringify(options));
+//			        }
+//			    };
+//			    plus.nativeUI = _nativeUI;			
+//
+//			}) (plus)
+
+			/*
+			function plusready55(){
+				alert("plusready55");
+				plus.runtime = window.runtime;
+				plus.webview = window.webview;
+				plus.nativeUI = window.nativeUI;
+			}
+			document.addEventListener("plusready", function() {
+				plusready55();
+			}, false);
+			*/
+			/* */
 			//mui初始化
 			mui.init({
 				swipeBack: true //启用右滑关闭功能
@@ -78,6 +108,7 @@
 			document.getElementById("toastBtn").addEventListener('tap', function() {
 				mui.toast('欢迎体验Hello MUI');
 			});
+
 		</script>
 	</body>
 
