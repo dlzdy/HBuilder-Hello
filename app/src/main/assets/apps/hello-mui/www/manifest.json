@@ -1,7 +1,7 @@
 {
 	"@platforms": ["android", "iPhone", "iPad"],
 	"id": "hello-mui",/*必选，应用的标识*/
-	"name": "hello-mui",/*必选，应用名称*/
+	"name": "hello-mui(反)",/*必选，应用名称*/
 	"version": {
 		"name": "1.0",/*必选，版本名称*/
 		"code": ""
@@ -79,10 +79,10 @@
 			"autoclose": false,/*如果为true，程序启动的图片可以自动关闭，如果为false，开发者需要手动关闭*/
 			"waiting": true/*是否在程序启动界面显示等待雪花，true表示显示，false表示不显示。*/
 		},
-		"runmode": "normal",/*两个值，liberate或normal，前者在应用安装时释放资源，后者不需要释放资源*/
+		"runmode": "liberate",/*两个值，liberate或normal，前者在应用安装时释放资源，后者不需要释放资源*/
 		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
 		"distribute": {
-			"debug": "",/*可选，是否为debug模式，可取值：true表示debug模式运行，false表示release模式运行，默认值为false*/
+			"debug": true,/*可选，是否为debug模式，可取值：true表示debug模式运行，false表示release模式运行，默认值为false*/
 			"apple": {
 				"appid": "",/*iOS必选，苹果开发网站申请的appid，如io.dcloud.HelloMUI*/
 				"mobileprovision": "",/*iOS必选，打包配置文件*/
@@ -174,7 +174,10 @@
 					"list.html"
 				],
 				"refer": [
-					"index-menu.html"
+					"index-menu.html",
+					"examples/guide.html",
+					"examples/mytest.html",
+					"examples/accordion.html"
 				],
 				"priority": 0
 			},
@@ -1015,6 +1018,15 @@
 					"css/app.css",
 					"css/mui.min.css",
 					"js/mui.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"examples/mytest.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
 				],
 				"refer": [],
 				"priority": 0
