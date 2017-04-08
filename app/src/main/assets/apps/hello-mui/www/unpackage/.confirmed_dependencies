@@ -1,32 +1,35 @@
 {
-  "index.html": {
-    "resources": [
-      "js/mui.min.js",
-      "fonts/mui.ttf",
-      "css/mui.min.css",
-      "js/update.js"
-    ],
-    "refer": [
-      "index-menu.html",
-      "examples/guide.html",
-      "examples/mytest.html",
-      "examples/accordion.html"
-    ]
-  },
-  "examples/mytest.html": {
-    "resources": [
-      "js/mui.min.js",
-      "fonts/mui.ttf",
-      "css/mui.min.css"
-    ],
-    "refer": []
-  },
-  "examples/accordion.html": {
-    "resources": [
-      "images/cbd.jpg",
-      "images/muwu.jpg",
-      "images/yuantiao.jpg",
-      "images/shuijiao.jpg"
-    ]
-  }
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"js/update.js"
+		],
+		"refer": [
+			"index-menu.html",
+			"examples/guide.html",
+			"examples/mytest.html",
+			"examples/accordion.html"
+		]
+	},
+	"examples/mytest.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"examples/accordion.html": {
+		"resources": [
+			"images/cbd.jpg",
+			"images/muwu.jpg",
+			"images/yuantiao.jpg",
+			"images/shuijiao.jpg",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		]
+	}
 }
